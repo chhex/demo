@@ -1,0 +1,7 @@
+---
+type: specs.openrewrite.org/v1beta/recipe
+name: demo.Recipes
+displayName: Reproduction of Multi Module Error 
+recipeList:
+  - org.openrewrite.java.RemoveUnusedImports
+  - org.openrewrite.java.format.RemoveTrailingWhitespace
