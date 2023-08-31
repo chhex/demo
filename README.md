@@ -2,29 +2,13 @@ Demos a Openrewrite Error with Maven Multi Module Projects and Profiles
 
 To reproduce:
 
-1
+1 `.\mvnw.cmd clean package`
 
-```.\mvnw.cmd clean package
+2 `.\mvnw.cmd clean package -P!InclB`
 
-```
+3 `.\mvnw.cmd rewrite:run`
 
-2
-
-```.\mvnw.cmd clean package -P!InclB
-
-```
-
-3
-
-```.\mvnw.cmd rewrite:run
-
-```
-
-4
-
-```.\mvnw.cmd rewrite:run -P!InclB
-
-```
+4 `.\mvnw.cmd rewrite:run -P!InclB`
 
 -> 1 : Maven builds and tests both Modules -> correct
 
